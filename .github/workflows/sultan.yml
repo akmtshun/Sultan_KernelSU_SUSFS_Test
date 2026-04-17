@@ -87,7 +87,7 @@ jobs:
           echo "Changing to configuration directory: $CONFIG..."
           cd "$CONFIG"
 
-          SUSFS_VERSION="2.0.0"
+          SUSFS_VERSION="2.1.0"
 
           echo "Applying SUSFS patches..."
 
