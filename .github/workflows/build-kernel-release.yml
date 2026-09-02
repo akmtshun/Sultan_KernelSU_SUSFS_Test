@@ -24,14 +24,14 @@ jobs:
       REPO_OWNER: TheWildJames
       REPO_NAME: Sultan_KernelSU_SUSFS
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RELEASE_NAME: "Sultan Kernels With KernelSU Next & SUSFS v2.0.0"
+      RELEASE_NAME: "Sultan Kernels With KernelSU Next & SUSFS v2.1.0"
       RELEASE_NOTES: |
-        This release contains KernelSU Next and SUSFS v2.0.0
+        This release contains KernelSU Next and SUSFS v2.1.0
         
         ### 📦 Variants Included:
         * **stock**: The pure, unmodified base Sultan kernel. Built straight from source with no extra patches or additions.
         * **wksu**: Includes Wild KernelSU (WKSU) integrated into the kernel. No other modifications.
-        * **wksu-susfs**: The ultimate package. Includes Wild KernelSU, SUSFS v2.0.0, and extra custom configurations (Mountify support, networking tweaks, BBR TCP congestion, and IPSet support).
+        * **wksu-susfs**: The ultimate package. Includes KernelSU Next, SUSFS v2.1.0, and extra custom configurations (Mountify support, networking tweaks, BBR TCP congestion, and IPSet support).
         
         ⚠️ **COMPATIBILITY NOTICE** ⚠️
         Please ensure compatibility!
@@ -43,11 +43,14 @@ jobs:
         -> https://github.com/sidex15/ksu_module_susfs
         
         Managers:
-        -> https://github.com/WildKernels/Wild_KSU
+        -> https://github.com/KernelSU-Next/KernelSU-Next
         
         Features:
-        [+] Wild KSU
-        [+] SUSFS v2.0.0
+        [+] KernelSU Next
+        [+] SUSFS v2.1.0
+        [+] Mountify Support
+        [+] BBR TCP Congestion Control
+        [+] IPSet Support
 
     steps:
       # Checkout the code
